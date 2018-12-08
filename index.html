@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Bootstrap Visualization Dashboard </title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+ 
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="row">
+
+                 <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            
+              
+                  <span class="sr-only">Toggle Navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="col-xs-9 phone-nav">
+               
+                  <a class="navbar-brand" href="#"> Latitude </a>
+                  
+                </div>
+                   
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots <span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                                
+                  <!-- /*<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"> -->
+                   <li> <a  href="Max_temp.html">Max Temp</a></li>
+                   <li> <a  href="Humidity.html">Humidity</a></li>
+                   <li> <a  href="Cloudiness.html">Cloudiness</a></li>
+                   <li> <a  href="Wind_speed.html">Wind Speed</a></li>
+                  </ul>
+                </li>
+                <li >
+                    <a  href="Comparison.html">Comparison</a>
+                  </li>
+  
+                  <li >
+                    <a  href="Data.html">Data</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+          </nav>
+
+
+    <!-- Second Row -->
+    <div class="container-fluid">
+
+    <div class="row">
+            <div class="col-xs-8 col-sm-8 col-md-8">
+                <div class="container-bg">
+                    <div class="container-fluid">
+                            <h1><i>Summary: Latitude vs. X </i></h1>        
+                            <p>&nbsp;</p>
+                            
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                                 <img src="Citylat_maxtemp.png" alt="Max Temp"  style="width:432px;height:288px;"/> 
+                            </div>
+
+                            <div class="col-xs-6 col-sm-6 col-md-6">
+                            <p> </p>
+                            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities</p>        
+                            <p> </p>
+                            <p> </p>
+                            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitiude. Factors we loooked at included: </p> 
+                            <p>temeprature, cloudiness, wind, speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explainations anddescriptions of any trends and correlations witnessed  </p>        
+                            </div>
+                            <div>&nbsp;</div>
+                    </div> 
+                </div>    
+            </div>  
+
+            <div class="col-xs-4 col-sm-4 col-md-4">
+                    <div class="container-bg">
+                    <div class="container-fluid">
+                            <h2>Visualization</h2>                    
+                            <p>&nbsp;</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                <img src="Citylat_maxtemp.png" alt="Max Temp"/> 
+                                </div>
+
+                                <div class="col-md-6">
+                                <img src="Citylat_humidity.png" alt="Humidity"/>
+                                </div>
+                                <p> </p>
+                                <p> </p>
+                            </div>
+
+                            
+                            <div>&nbsp;</div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                <img src="Citylat_cloudiness.png" alt="Cloudiness"/>
+                                </div>
+
+                                <div class="col-md-6">
+                                <img src="Citylat_windspeed.png" alt="Wind Speed"/>
+                                </div>
+                            </div>
+                            <div>&nbsp;</div>
+                    </div>
+                    </div>    
+            </div>
+    </div>
+   </div>      
+</body>
+
+</html>
